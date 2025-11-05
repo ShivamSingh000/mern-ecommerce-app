@@ -1,3 +1,5 @@
+
+
 const backendDomain = "http://localhost:8080"
 
 const SummaryApi = {
@@ -16,6 +18,14 @@ const SummaryApi = {
     logout_user : {
         url : `${backendDomain}/api/userLogout`,
         method : "get"
+    },
+    allUsers : {
+        url : `${backendDomain}/api/all-user`,
+        method : "get"
+    },
+    updateUser :{
+        url : `${backendDomain}/api/update-user`,
+        method : "post"
     }
 }
 
