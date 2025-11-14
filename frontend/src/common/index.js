@@ -1,5 +1,4 @@
 
-
 const backendDomain = "http://localhost:8080"
 
 const SummaryApi = {
@@ -34,6 +33,10 @@ const SummaryApi = {
     allProduct : {
         url :  `${backendDomain}/api/get-product`,
         method : 'get'
+    },
+    updateProduct : {
+        url: `${backendDomain}/api/update-product`,
+        method : 'post'
     }
 }
 

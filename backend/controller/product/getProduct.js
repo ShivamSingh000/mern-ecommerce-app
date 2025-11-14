@@ -1,4 +1,4 @@
-const productModel = require("../models/productMode")
+const productModel = require("../../models/productModel")
 
 
 const getProductController = async(req,res)=> {
