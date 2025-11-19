@@ -15,6 +15,7 @@ app.use(cors({
 
 app.use(express.json())
 app.use(cookieParser());
+
 app.use("/api",router)
 
 
@@ -24,6 +25,6 @@ const PORT = 8080 || process.env.PORT
 connectDB().then(() => {
     app.listen(PORT, () => {
         console.log("connected to DB")
-        console.log("Server is running 8080")
+        console.log("Server is running",PORT)
     })
 })
